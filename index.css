@@ -1,0 +1,55 @@
+:root {
+  --grid-cols: 16;
+  --grid-rows: 16;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
+  min-height: 100%;
+}
+.container {
+  width: 580px;
+  height: 580px;
+  margin: 5px auto;
+  border-style: solid;
+  border-width: 2px;
+  display: grid;
+  grid-template: repeat(var(--grid-rows), 1fr) / repeat(var(--grid-cols), 1fr);
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
+}
+.square {
+  border-style: solid;
+  border-width: 1px;
+  padding: 2px;
+}
+
+.prompt {
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
